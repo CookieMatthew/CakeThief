@@ -14,7 +14,7 @@ public class CakeThief extends JavaPlugin{
         new Thread(new StartCountdown()).start();
     }
 
-    public void registerListeners(){
+   public void registerListeners(){
         PluginManager pm = getServer().getPluginManager();
         pm.registerEvents(new PlayerJoin(this), this);
         pm.registerEvents(new PlayerQuit(this), this);
